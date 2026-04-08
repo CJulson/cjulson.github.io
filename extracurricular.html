@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extracurricular — Connor Julson</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Connor <span>Julson</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="extracurricular.html" class="active">Extracurricular</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="social.html">Social</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <span class="label">Involvement</span>
+      <div class="divider"></div>
+      <h2>Highlights of Interests<br>&amp; Extracurricular</h2>
+      <p style="margin-top:0.75rem;max-width:60ch;">Leadership, community service, and the clubs that shaped my undergraduate experience — and what I learned from each.</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- Card 1: PISEC -->
+      <article class="card fade-in">
+        <!-- Replace src with a real photo of your tutoring/PISEC work -->
+        <img
+          class="card-img"
+          src="images/pisec.jpg"
+          alt="PISEC Tutoring"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        />
+        <div class="card-img-placeholder" style="display:none;">[ PISEC / tutoring photo ]</div>
+        <div class="card-body">
+          <span class="card-tag">Volunteer · Leadership</span>
+          <h3>PISEC Tutoring</h3>
+          <p>I served as a volunteer tutor for middle and high school students in STEM, focusing on academic growth and confidence-building. As a site leader for PISEC I took on broader organizational responsibilities: leading tutor trainings, coordinating carpools to ensure students could attend sessions, and contributing to research efforts that supported the program's larger mission. Working with younger students reinforced my belief in the importance of community-based mentorship and made me think more seriously about public service as a career path.</p>
+        </div>
+      </article>
+
+      <!-- Card 2: Cybersecurity Club -->
+      <article class="card fade-in">
+        <!-- Replace src with a real photo of your cybersecurity club / competition -->
+        <img
+          class="card-img"
+          src="images/cybersec-club.jpg"
+          alt="Cybersecurity Club"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        />
+        <div class="card-img-placeholder" style="display:none;">[ Cybersecurity Club photo ]</div>
+        <div class="card-body">
+          <span class="card-tag">Leadership · Competitions</span>
+          <h3>Cybersecurity Club</h3>
+          <p>I played an integral role in arranging meetings, securing speakers, curating club content, and handling competition registration for the CU Cybersecurity Club. My advertising and recruitment efforts drove a 300% increase in membership and attendance year over year. Beyond the organizational side, I competed in a wide variety of cybersecurity competitions covering red teaming, blue teaming, and cybersecurity policy — treating each like a hands-on project that sharpened both technical skills and strategic thinking.</p>
+        </div>
+      </article>
+
+      <!-- Card 3: CU Melee Club -->
+      <article class="card fade-in">
+        <!-- Replace src with a real photo of your Melee Club / tournament -->
+        <img
+          class="card-img"
+          src="images/melee.jpg"
+          alt="CU Melee Club"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        />
+        <div class="card-img-placeholder" style="display:none;">[ CU Melee Club photo ]</div>
+        <div class="card-body">
+          <span class="card-tag">President · Community Building</span>
+          <h3>CU Melee Club</h3>
+          <p>As president of CU Melee Club I handled the full scope of club operations: coordinating gaming tournaments, managing finances, overseeing travel logistics, and planning trips to national events. Under my leadership, club attendance grew by a consistent 300%, and we secured new opportunities to participate in broader CU Gaming events. Running a student organization taught me more about budgeting, delegation, and community-building than any classroom — and it's where I developed a lot of my practical leadership instincts.</p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Connor Julson · Built for Colorado Law application season</p>
+</footer>
+
+</body>
+</html>
