@@ -1,111 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grigory Shatalin</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
+  <h1>Connor Julson — Portfolio</h1>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Connor <span>Julson</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="extracurricular.html">Extracurricular</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="social.html">Social</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <header>
-      <div class="header-row">
-        <div>
-          <h1 class="name">Grigory Shatalin</h1>
-          <p class="role">Software Engineer</p>
+<main class="page">
+  <div class="container">
+
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-text fade-in">
+          <span class="label">Welcome</span>
+          <div class="divider"></div>
+          <h1>Connor<br>Julson</h1>
+          <p style="margin-top:1.5rem;">Computer Scientist turned future lawyer. Senior at CU Boulder, heading to Colorado Law this fall.</p>
+          <a href="resume.html" class="btn" style="margin-top:2rem;">View Resume</a>
+          <a href="extracurricular.html" class="btn btn-outline" style="margin-top:1rem; margin-left:1rem;">Explore Work</a>
         </div>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-          </svg>
-          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
-      </div>
-    </header>
-
-    <section>
-      <h2 class="section-title">Today</h2>
-      <p class="bio">
-        Building at <a href="https://www.circle.com" class="link" target="_blank" rel="noopener noreferrer">Circle</a>.
-        Working with <a href="https://www.arc.network/" class="link" target="_blank" rel="noopener noreferrer">ARC</a> on chain.
-      </p>
-    </section>
-
-    <section>
-      <h2 class="section-title">Projects / Work</h2>
-      <div class="item-list">
-
-        <a class="item" href="https://github.com/grigoryshatalin/BuffAI" target="_blank" rel="noopener noreferrer">
-          <div class="item-content">
-            <span class="item-title">BuffAI</span>
-            <span class="item-desc">Full-stack AI web application built with JavaScript, Python, and Handlebars.</span>
-          </div>
-          <svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
-        </a>
-
-        <a class="item" href="https://github.com/grigoryshatalin/powerbi-visuals-heatmap" target="_blank" rel="noopener noreferrer">
-          <div class="item-content">
-            <span class="item-title">Power BI Heatmap</span>
-            <span class="item-desc">Contributed to Microsoft's open-source Power BI custom visual for heatmap data visualization.</span>
-          </div>
-          <svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
-        </a>
-
-        <a class="item" href="https://github.com/grigoryshatalin/KalshiNFL" target="_blank" rel="noopener noreferrer">
-          <div class="item-content">
-            <span class="item-title">KalshiNFL</span>
-            <span class="item-desc">Tool built on Kalshi's prediction markets API for tracking NFL game odds.</span>
-          </div>
-          <svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
-        </a>
-
+        <div class="hero-img fade-in">
+          <!-- Replace the src below with your actual professional photo -->
+          <img src="images/profile.jpg" alt="Connor Julson" onerror="this.parentElement.innerHTML='<div class=\'card-img-placeholder\' style=\'aspect-ratio:3/4\'>[ Your photo here ]</div>'" />
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">More</h2>
-      <div class="item-list">
-        <a class="item" href="https://github.com/grigoryshatalin" target="_blank" rel="noopener noreferrer">
-          <span class="item-title">GitHub</span>
-          <svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
-        </a>
-        <a class="item" href="https://x.com/g_shatalin" target="_blank" rel="noopener noreferrer">
-          <span class="item-title">X / Twitter</span>
-          <svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
-        </a>
-        <a class="item" href="https://www.linkedin.com/in/grigory-shatalin/" target="_blank" rel="noopener noreferrer">
-          <span class="item-title">LinkedIn</span>
-          <svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
-        </a>
-        <a class="item" href="mailto:grshatalin@outlook.com">
-          <span class="item-title">Email</span>
-          <svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
-          </svg>
-        </a>
+    <section class="about-section fade-in">
+      <aside class="about-sidebar">
+        <div class="sidebar-item">
+          <span class="label">Degree</span>
+          <p>B.S. Computer Science<br>CU Boulder, 2025</p>
+        </div>
+        <div class="sidebar-item">
+          <span class="label">Next Chapter</span>
+          <p>J.D. Candidate<br>Colorado Law, Fall 2025</p>
+        </div>
+        <div class="sidebar-item">
+          <span class="label">Career Goal</span>
+          <p>Local Prosecutor /<br>Public Service</p>
+        </div>
+        <div class="sidebar-item">
+          <span class="label">Focus</span>
+          <p>Criminal Law</p>
+        </div>
+      </aside>
+
+      <div class="about-body">
+        <span class="label">About Me</span>
+        <div class="divider"></div>
+        <h2 style="margin-bottom:1.5rem;">Analytical thinker.<br>Community-driven problem solver.</h2>
+
+        <p>Hey there — my name is Connor Julson and I am a senior in Computer Science at CU Boulder. I'm graduating with my Bachelor's in Computer Science this May and afterwards I'm proceeding onto law school at Colorado Law starting this fall. At law school I'd like to study criminal law and pursue a career as a local prosecutor after graduation.</p>
+
+        <p>When I started my undergraduate degree in Computer Science I was intent on seeking a career in Cybersecurity, but as I went further down that career path, I realized I needed something else to motivate me. As a computer science student, I enjoyed solving complex problems and thinking analytically, but I found myself wanting work that was more directly connected to people and the real-world impact of those problems. That realization is what ultimately pushed me toward law.</p>
+
+        <p>I'm very much looking forward to applying the skills I've developed in computer science in a way that can make a meaningful impact on my community. This summer, I'll be returning to my hometown to intern at the District Attorney's office, where I'll get my first real experience working in the legal field. It's an exciting opportunity to start learning how the justice system operates and to see firsthand the work that goes into building a case.</p>
+
+        <p>As I approach graduation, I'm preparing to begin a completely new chapter. Starting law school feels a bit like starting over, but I'm excited for the challenge. While the transition is a little nerve-wracking, I'm eager to keep learning and to begin working toward a career in public service.</p>
+
+        <p>In this portfolio you'll find an archive of my experiences and accomplishments — from my leadership roles and volunteer work to my professional internships and technical projects. I hope it gives you a clear picture of who I am and what I bring to the table.</p>
+
+        <!-- Second professional photo — replace src with your actual image -->
+        <div style="margin-top:3rem; display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; align-items:start;">
+          <figure>
+            <img src="images/interests.jpg" alt="Connor — interests" style="width:100%;display:block;filter:grayscale(15%);" onerror="this.parentElement.innerHTML='<div class=\'card-img-placeholder\' style=\'height:220px\'>[ Interest photo here ]</div>'" />
+            <figcaption style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem;letter-spacing:0.04em;">Competing / Outdoors</figcaption>
+          </figure>
+          <div style="padding-top:1rem;">
+            <span class="label">What you'll find here</span>
+            <ul style="margin-top:1rem;list-style:none;display:flex;flex-direction:column;gap:0.75rem;">
+              <li style="font-size:0.9rem;color:var(--muted);padding-left:1rem;border-left:2px solid var(--accent);">Résumé &amp; credentials</li>
+              <li style="font-size:0.9rem;color:var(--muted);padding-left:1rem;border-left:2px solid var(--faint);">Leadership &amp; volunteer highlights</li>
+              <li style="font-size:0.9rem;color:var(--muted);padding-left:1rem;border-left:2px solid var(--faint);">Academic &amp; professional experience</li>
+              <li style="font-size:0.9rem;color:var(--muted);padding-left:1rem;border-left:2px solid var(--faint);">Social &amp; professional profiles</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-  </main>
+  </div>
+</main>
 
-  <script src="script.js"></script>
+<footer>
+  <p>© 2025 Connor Julson · Built for Colorado Law application season</p>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Connor Julson</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Connor <span>Julson</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="resume.html" class="active">Resume</a></li>
+      <li><a href="extracurricular.html">Extracurricular</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="social.html">Social</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <span class="label">Credentials</span>
+      <div class="divider"></div>
+      <h2>Résumé / CV</h2>
+      <p style="margin-top:0.75rem;max-width:55ch;">An overview of my academic background, professional experience, and skills. Personal contact information has been omitted from this public version.</p>
+    </div>
+
+    <div class="resume-section fade-in">
+
+      <!--
+        OPTION A — Google Drive embed (recommended for GitHub Pages)
+        1. Upload your resume PDF to Google Drive
+        2. Set sharing to "Anyone with the link can view"
+        3. Get the file ID from the share link: drive.google.com/file/d/FILE_ID/view
+        4. Replace FILE_ID below with your actual file ID
+        5. Uncomment the iframe and delete the placeholder div
+      -->
+
+      <!--
+      <iframe
+        class="resume-embed"
+        src="https://drive.google.com/file/d/FILE_ID/preview"
+        title="Connor Julson Resume"
+        allow="autoplay"
+      ></iframe>
+      -->
+
+      <!-- PLACEHOLDER — remove this block once you add your Google Drive embed above -->
+      <div style="width:100%;height:80vh;border:1px solid var(--faint);background:var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;">
+        <p style="font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;color:var(--muted);">Resume embed goes here</p>
+        <p style="font-size:0.82rem;color:var(--muted);max-width:36ch;text-align:center;">Replace the Google Drive FILE_ID in the iframe above, then remove this placeholder block.</p>
+      </div>
+
+      <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <!--
+          Replace the href below with your direct Google Drive view link
+          e.g. https://drive.google.com/file/d/FILE_ID/view
+        -->
+        <a href="#" class="btn" target="_blank" rel="noopener">Open in Google Drive ↗</a>
+        <a href="resume.pdf" class="btn btn-outline" download>Download PDF</a>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Connor Julson · Built for Colorado Law application season</p>
+</footer>
+
+</body>
+</html>
